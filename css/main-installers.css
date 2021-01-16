@@ -3,24 +3,70 @@
   src: url(../fonts/Roboto.ttf);
 }
 
-.button-in {
-  color: #ffffff;
-  background-color: #159822;
-  border-radius: 6px;
-  font-size: 18px;
-  font-weight: 400;
-  font-family: 'Roboto', Arial, Helvetica, sans-serif;
-  padding: 8px 16px;
-  max-width: 173px;
-  text-align: center;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+.background-wrapper {
+  background-image: url("../img/bunner.jpg");
+  background-repeat: no-repeat;
+  height: 450px;
+  position: relative;
+  padding-left: 15%;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 60px;
 }
 
-.text {
+.title-text-bunner {
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-size: 36px;
+  text-transform: uppercase;
+  color: #ffffff;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  margin: 0;
+  background: #0000006e;
+  padding: 20px;
+  text-align: left;
+}
+
+.text-sentence {
   font-family: 'Roboto', Arial, Helvetica, sans-serif;
   color: #000000;
   text-align: center;
-  font-size: 15px;
+  margin: 0;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.text-sentence-wrapper {
+  max-width: 1116px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+}
+
+.bloc-logo {
+  border: 1px solid #ffffff;
+  max-width: 740px;
+  border-radius: 8px;
+  -webkit-box-shadow: 0px 10px 35px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 10px 35px rgba(0, 0, 0, 0.1);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.inlain {
+  border-bottom: 2px solid #159822;
+  width: 260px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bloc-logo-img {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  padding-top: 40px;
+  margin-bottom: 12px;
 }
 /*# sourceMappingURL=main-installers.css.map */
