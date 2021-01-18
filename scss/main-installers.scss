@@ -22,6 +22,7 @@
     max-width: 340px;
     border-radius: 8px;
     box-shadow: 0px 10px 35px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
 }
 
 @mixin box-footer {
@@ -119,6 +120,7 @@
     margin-bottom: 56px;
     padding: 41px 40px 40px 40px;
     box-sizing: border-box;
+    position: relative;
 }
 
 .bloc-advantages-wrapper {
@@ -152,4 +154,61 @@ p {
     position: absolute;
     top: 0;
     left: 0;
+}
+
+.line-l::before {
+    content: '';
+    background-image: url("../img/line-l.svg");
+    width: 130px;
+    background-repeat: no-repeat;
+    height: 36px;
+    position: absolute;
+    top: -32px;
+    left: 50%;
+    transform: translateX(-51%);
+}
+
+.line-c {
+    position: relative;
+}
+
+.line-c::before {
+    content: '';
+    background-image: url("../img/line-c.svg");
+    width: 130px;
+    background-repeat: no-repeat;
+    height: 33px;
+    position: absolute;
+    top: -32px;
+    left: 50%;
+    transform: translateX(-51%);
+}
+
+.line-r {
+    position: relative;
+}
+
+.line-r::before {
+    content: '';
+    background-image: url("../img/line-r.svg");
+    width: 130px;
+    background-repeat: no-repeat;
+    height: 33px;
+    position: absolute;
+    top: -32px;
+    left: 50%;
+    transform: translateX(-52%);
+}
+
+.bloc-advantages-wrapper-backgraund {
+    background-image: url('../img/background-body.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.img-line-wrapper {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
 }
