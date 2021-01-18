@@ -125,4 +125,19 @@
 p {
   margin: 0;
 }
+
+.bloc-logo-wrapper {
+  margin-bottom: 120px;
+  position: relative;
+}
+
+.bloc-logo-wrapper::before {
+  content: '';
+  background-image: url("../img/line.svg");
+  width: 300px;
+  height: 30px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
 /*# sourceMappingURL=main-installers.css.map */
