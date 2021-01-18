@@ -1,109 +1,140 @@
 @font-face {
-  font-family: Roboto;
-  src: url(../fonts/Roboto.ttf);
+    font-family: Roboto;
+    src: url(../fonts/Roboto.ttf);
 }
 
 @mixin text {
-  font-family: "Roboto", Arial, Helvetica, sans-serif;
-  color: #000000;
-  text-align: center;
-  margin: 0;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    color: #000000;
+    text-align: center;
+    margin: 0;
 }
 
 @mixin box-header {
-  border: 1px solid #ffffff;
-  max-width: 740px;
-  border-radius: 8px;
-  box-shadow: 0px 10px 35px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ffffff;
+    max-width: 740px;
+    border-radius: 8px;
+    box-shadow: 0px 10px 35px rgba(0, 0, 0, 0.1);
 }
 
 @mixin box-body {
-  border: 1px solid #ffffff;
-  max-width: 340px;
-  border-radius: 8px;
-  box-shadow: 0px 10px 35px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ffffff;
+    max-width: 340px;
+    border-radius: 8px;
+    box-shadow: 0px 10px 35px rgba(0, 0, 0, 0.1);
 }
 
 @mixin box-footer {
-  border: 1px solid #ffffff;
-  max-width: 380px;
-  border-radius: 8px;
-  box-shadow: 0px 10px 35px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ffffff;
+    max-width: 380px;
+    border-radius: 8px;
+    box-shadow: 0px 10px 35px rgba(0, 0, 0, 0.1);
 }
 
 @mixin button {
-  color: #ffffff;
-  background-color: #159822;
-  border-radius: 6px;
-  font-size: 18px;
-  font-weight: 400;
-  font-family: "Roboto", Arial, Helvetica, sans-serif;
-  padding: 8px 16px;
-  max-width: 173px;
-  text-align: center;
-  box-sizing: border-box;
+    color: #ffffff;
+    background-color: #159822;
+    border-radius: 6px;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    padding: 8px 16px;
+    max-width: 173px;
+    text-align: center;
+    box-sizing: border-box;
 }
 
 .background-wrapper {
-  background-image: url("../img/bunner.jpg");
-  background-repeat: no-repeat;
-  height: 450px;
-  position: relative;
-  padding-left: 15%;
-  background-size: cover;
-  background-position: center;
-  margin-bottom: 60px;
+    background-image: url("../img/bunner.jpg");
+    background-repeat: no-repeat;
+    height: 450px;
+    position: relative;
+    padding-left: 15%;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 60px;
 }
 
 .title-text-bunner {
-  font-family: "Roboto", Arial, Helvetica, sans-serif;
-  font-size: 36px;
-  text-transform: uppercase;
-  color: #ffffff;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  margin: 0;
-  background: #0000006e;
-  padding: 20px;
-  text-align: left;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    font-size: 36px;
+    text-transform: uppercase;
+    color: #ffffff;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0;
+    background: #0000006e;
+    padding: 20px;
+    text-align: left;
 }
 
 .text-sentence {
-  @include text;
-  font-size: 30px;
-  font-weight: 500;
+    @include text;
+    font-size: 30px;
+    font-weight: 500;
 }
 
 .text-sentence-wrapper {
-  max-width: 1116px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 40px;
+    max-width: 1116px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
 }
 
 .bloc-logo {
-  @include box-header;
-  margin-left: auto;
-  margin-right: auto;
+    @include box-header;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
 }
 
 .inlain {
-  border-bottom: 2px solid #159822;
-  width: 260px;
-  margin-left: auto;
-  margin-right: auto;
+    border-bottom: 2px solid #159822;
+    width: 260px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .bloc-logo-img {
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-  padding-top: 40px;
-  margin-bottom: 12px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding-top: 40px;
+    margin-bottom: 12px;
 }
 
 .text-blok-logo {
-  @include text;
-  font-size: 20px;
+    @include text;
+    font-size: 16px;
+    padding-top: 16px;
+    padding-left: 4%;
+    margin-right: 4%;
+    margin-bottom: 40px;
+}
+
+.bloc-advantages {
+    @include box-body;
+    @include text;
+    margin-bottom: 56px;
+    padding: 41px 40px 40px 40px;
+    box-sizing: border-box;
+}
+
+.bloc-advantages-wrapper {
+    display: flex;
+    max-width: 1440px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bloc-advantages-img {
+    margin-bottom: 22px;
+}
+
+p {
+    margin: 0;
 }
