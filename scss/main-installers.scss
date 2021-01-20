@@ -316,7 +316,7 @@ p {
 
 .input-inlain {
     border-bottom: 2px solid #159822;
-    width: 408px;
+    max-width: 408px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 12px;
@@ -474,7 +474,75 @@ input:hover {
         font-size: 20px;
         font-weight: 500;
     }
-    .input-wrapper {
+    .input-wrapper {}
+    .input-wrapper-item {
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .img-line-wrapper-bloc {
         display: none;
+    }
+    .line-l-l::before {
+        width: 0;
+    }
+    .line-c::before {
+        width: 0;
+    }
+    .line-l::before {
+        width: 0;
+    }
+    .line-r::before {
+        content: '';
+        width: 0;
+    }
+    .line-r-r::before {
+        content: '';
+        width: 0;
+    }
+    .bloc-advantages-wrapper {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .bloc-logo {
+        @include box-body;
+    }
+    .text-sentence-wrapper {
+        padding: 0 16px;
+        margin-bottom: 36px;
+    }
+    .bloc-logo-wrapper {
+        margin-bottom: 32px;
+    }
+    .bloc-advantages {
+        margin-bottom: 24px;
+    }
+    .choice-bloc-wrapper {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .choice-bloc {
+        @include text;
+        box-sizing: border-box;
+        background-color: #ffffff;
+        box-shadow: 0px 10px 35px rgba(0, 0, 0, 0);
+    }
+    .choice-wrapper {
+        background-size: 0;
+        background-color: #ffffff;
+    }
+    .bloc-advantages-wrapper-backgraund {
+        background-size: 0;
+        background-color: #ffffff;
+    }
+    .choice-bloc-wrapper-second {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
     }
 }
