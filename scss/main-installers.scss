@@ -14,14 +14,14 @@
     border: 1px solid #ffffff;
     max-width: 740px;
     border-radius: 8px;
-    box-shadow: 0px 10px 35px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 10px 35px #e6e6e6;
 }
 
 @mixin box-body {
     border: 1px solid #ffffff;
     max-width: 340px;
     border-radius: 8px;
-    box-shadow: 0px 10px 35px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 10px 35px #e6e6e6;
     background-color: #ffffff;
 }
 
@@ -29,7 +29,7 @@
     border: 1px solid #ffffff9;
     max-width: 380px;
     border-radius: 8px;
-    box-shadow: 0px 10px 35px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 10px 35px #e6e6e6;
     opacity: 0.8;
     background-color: #ffffff;
 }
